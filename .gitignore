@@ -1,0 +1,37 @@
+# Node / React Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.npm
+
+# Python Backend
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# Large Model Files (Do not push to Git!)
+model/
+*.zip
+*.safetensors
+*.bin
+*.h5
+
+# Logs
+*.log
+
+# IDEs and Tools
+.vscode/
+.idea/
+.gemini/
+.DS_Store
