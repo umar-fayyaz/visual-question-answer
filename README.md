@@ -7,7 +7,7 @@ A modern, full-stack web application designed to run inference on a fine-tuned *
 - **Custom Fine-Tuning**: Utilizes LoRA adapters (via PEFT) trained specifically on Visual Question Answering (VQA) datasets.
 - **Dynamic Glassmorphism UI**: A beautiful, responsive React frontend built with Vite and TypeScript.
 - **Scalable Async Backend**: A robust FastAPI Python server using memory semaphores to strictly control GPU VRAM allocations.
-- **Cloud-Ready**: Designed to easily tunnel via Ngrok, allowing the heavy backend to run on free GPU cloud services (like Google Colab) while the frontend runs locally.
+- **Cloud-Ready**: Designed to easily connect to remote backend endpoints, allowing the heavy backend to run on free GPU cloud services (like Google Colab) while the frontend runs locally.
 
 ---
 
@@ -29,11 +29,11 @@ Upload this repository to a machine with a GPU (such as Google Colab). Run the f
 1. Install requirements:
    ```bash
    pip install -r backend/requirements.txt
-   pip install pyngrok nest-asyncio
+   pip install nest-asyncio
    pip install -U "torchao>=0.16.0"
    ```
-2. Start the FastAPI server using the provided Ngrok tunnel script (see Colab notebook examples).
-3. Wait for the model to load into the GPU. Ngrok will provide a public URL (e.g., `https://a1b2c3d4.ngrok-free.app`).
+2. Start the FastAPI server (e.g., using a tunneling service or exposing the port).
+3. Wait for the model to load into the GPU. Once started, you will have a public URL for your API.
 
 ### 2. Run the Frontend (Local Laptop)
 1. Open the `/frontend/` directory on your local machine.
