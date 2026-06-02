@@ -21,11 +21,11 @@ venv/
 .env.*.local
 
 # Large Model Files (Do not push to Git!)
-model/
-*.zip
-*.safetensors
-*.bin
-*.h5
+# model/
+# *.zip
+# *.safetensors
+# *.bin
+# *.h5
 
 # Logs
 *.log
